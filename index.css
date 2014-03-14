@@ -53,6 +53,8 @@ body{
 	font-family: arial,helvetica;
 	background-image: url(http://subtlepatterns.com/patterns/old_map.png);
 	background-repeat: repeat;
+	width: 1435px;
+
 	/*color: #333;
 	color: rgba(0,0,0,0.5);*/
 }
@@ -65,19 +67,61 @@ body{
 
 #logo{
 	float: left;
-	margin-top: 1em;
-	margin-left: 10em;
-	width: 9%;
-}
-#Photo{
-	border: BLACK 8px solid;
+	margin-top: 1%;
+	margin-left: 8%;
 }
 
-.wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 960px;
-	position: relative;
+#menu li {
+	display:inline-block;
+	margin-top: 110px;
+	margin-right: 0.1%;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px 10px 0px 0px; 
+            
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	/*position:fixed;*/
+	font-size: 1em;
+	text-align: right;
+	height: 70px;
+	z-index: 70;
+	right: 0;
+	/*width: 80%;*/
+	margin-right: 1%;
+}
+
+#Photo{
+	border: BLACK 8px solid;
+	width: 80%;
+
+	/*width="1250" height="380"*/
 }
 
 .grey{ 
@@ -127,7 +171,7 @@ p{
 }
 
 #left-list img{
-	height: 80px;
+	height: 100%;
 }
 
 #right-list{
@@ -148,7 +192,7 @@ p{
 	background-color: lightpink; /*#FFE4C4;*/
 }
 #news{
-	margin-left: -5em;
+	margin-left: -10%;
 }
 
 #speech{
@@ -158,8 +202,8 @@ p{
 #news p, #speech p{
 	font-size: 20px;
 	line-height: 1em;
-	padding-left: 5px;
-	margin-left: 18em;
+	/*padding-left: 5px;*/
+	margin-left: 80%;
 }
 
 #news h2, 
@@ -174,50 +218,7 @@ p{
 	padding-left: 2em;
 }
 
-#menu li {
-	display:inline-block;
-	
-	margin-top: 100px;
-	margin-right: 8px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px 10px 0px 0px; 
-            
-}
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
-}
-#menu li a{
-	text-decoration:none;
-	color: #000;
-}
-#menu li.active a:hover{
-	color: #000;
-}
 
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
-
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-}
-#menu li.active a{
-	color: #fff;
-}
-#menu{
-	/*position:fixed;*/
-	font-size: 1.5em;
-	text-align: right;
-	height: 70px;
-	z-index: 70;
-	right:0;
-}
 
 #joinus span{
 	padding-right: 1em;
@@ -225,14 +226,14 @@ p{
 
 #home{
 	text-align: right;
-	margin-right: 2em;
+	margin-right: 2%;
 	line-height: 1em;
 	font-size: 1.2em;
 }
 
 #home li{
 	display:inline-block;
-	margin-right: 2em;
+	margin-right: 2%;
 	
 }
 
@@ -248,7 +249,7 @@ p{
 #speech a:visited, 
 #joinus a:visited, 
 #home a:visited{
-	color: ORANGE;
+	color: MidnightBlue;
 	text-decoration: none;
 }
 
@@ -260,10 +261,6 @@ p{
 	margin-right: 3em;
 	/*padding-top: 2em;*/
 }
-/*.intro p{
-	width: 30%;
-	margin: 0 auto;
-	font-size: 1.5em;
-}*/
+
 
 
