@@ -78,8 +78,15 @@ body{
 	color: #000;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px 10px 0px 0px; 
-            
+	
+	-webkit-border-radius: 10px 0px; /*setting border radius at Chrome, Safari*/
+    
+    -moz-border-radius: 10px 10px 0px 0px; /*setting border radius at Firefox*/
+    
+    border-top-left-radius: 10px;       /*setting border radius at IE9*/
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 #menu li.active{
 	background:#666;
@@ -253,14 +260,17 @@ p{
 	text-decoration: none;
 }
 
-#Bottom{
-	line-height: 2em;
+#bottom-section{
+	padding-top: 2em;
 }
+
 #bottom-hr{
 	margin-left: 3em;
 	margin-right: 3em;
 	/*padding-top: 2em;*/
 }
 
-
+#Bottom{
+	line-height: 2em;
+}
 
